@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-dark: #5E6264;
+    --bg-light: #f4f4f4;
+    --number-clr-light: #A8A8AB;
+    --number-clr-dark: #f4f4f4;
+    --symbol-clr: #24f0c7;
+    --alt-clr: #368371;
+    --fs-btn: 0.8375rem;
+    --fs-num-display: 1.275rem;
+    --fs-num-small: 0.6375rem;
+  }
+body {
+    /* padding: 25px; */
+    /* background: url(/copy_172700824.png) no-repeat; */
+
+    color: var(--alt-clr);
+    font-size: 25px;
+    transition: 0.75s;
+  }
+  
+
+  .dark-mode {
+    background-color: rgb(92, 92, 92);
+    color: rgb(93, 93, 93);
+  }
+
+  .img-bg{
+    background: url(/copy_172700824.png) no-repeat;
+    background-position: center;
+    position: relative;
+    width: inherit;
+    height: 800px;
+         /* width:1000px;
+         height: 1000px; */
+  }
+
+  /* @media (max-width: 700px){
+      body{
+          background: green;
+      }
+
+     
+  } */
+.wrapper{
+    /* border: 1px solid; */
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    
+}
+
+.calc-container{
+   position: absolute;
+    width: 100%;
+    height: 800px;
+    top: 10vh;
+   
+}
+
+
+  .main-wrapper{
+    /* width: 320px;   */
+    margin: 0 auto;
+ 
+  }
+
+  .main-wrapper > * {
+      margin: 0 auto;
+  }
+  .header{
+      width: 200px;
+      font-size: 18px;
+      padding: 5px 0;
+      font-weight: bold;
+     border: 1px solid; 
+       border-radius: 25px;
+font-family:'Roboto';   
+letter-spacing: 0.13rem;
+   color: #fff;
+      background-color: var(--alt-clr);
+  }
+
+  .dark-mode .header{
+      background-color: #3d3d3d;
+    color: rgb(238, 238, 238);
+  }
+
+  .center-div > *{
+    padding: 28px;
+    
+  }
+
+
+  .dark-mode i {
+     color:rgb(93, 93, 93)
+  }
+  .slide-down{
+      transition: 0.5s;
+  }
+
+  .flex-side{
+     
+      display: flex;
+      flex-direction: row;
+  }
+
+  i{
+      margin-left: -20px;
+      color: var(--alt-clr)
+  }
+
+  .flex-side > * {
+      transition: 0.45s;
+      border-radius: 25%;
+      font-weight: 800;
+      cursor: pointer;
+  }
+
+  .flex-side > *:hover {
+  background-color: var(--number-clr-light);
+}
+
+.dark-mode  .flex-side > *:hover {
+    background-color: #5E6264;
+    color: rgb(179, 179, 179);
+  }
+  .align-side{
+     
+    align-items: center;
+  }
+
+  .space-side{
+      justify-content: center;
+  }
+  .user-text{
+      margin-top: 20px;
+      /* margin-left: 90px; */
+      font-family: 'Roboto';
+
+  }
+
+  #userText{
+    margin-left: 35px;
+    font-size: 22px;
+    font-weight: 800;
+            color: #000;
+            font-family: 'Roboto';
+  }
+
+  .dark-mode   #userText, .dark-mode #finalAnswer{
+   
+            color: rgb(179, 179, 179);
+  }
+
+  #finalAnswer {
+      /* margin-top: 10px; */
+      /* margin-left: 110px; */
+      font-size: 60px;
+      font-weight: bold;
+      color: #3a3a3a
+  }
+
+  /* Toogle Class */
+
+  .toogle-container{
+      width: 80px;
+      height: 25px;
+    position: relative;
+      background-color: rgb(93, 93, 93);
+      margin: 0 auto;
+      border-radius: 25px;
+      cursor: pointer;
+  }
+
+  .toogle-btn{
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background-color: #fff;
+      left: 0;
+     transition: 2s;
+     cursor: pointer;
+     animation: slideBack 1.5s ease forwards;
+  }
+
+  .dark-mode .toogle-btn{
+
+     animation: slide 1.5s forwards;
+      background-color: rgb(83, 83, 83);
+  }
+
+
+  @keyframes animate{
+      from{ background-color: #fff;}
+      to { background-color: rgb(83, 83, 83);}
+  }
+  @keyframes slide {
+      from {left: 0}
+      to {left: 55px}
+  }
+
+  @keyframes slideBack {
+    from {left: 50px}
+    to {left: 0}
+}
+  
+
+  .dark-mode .toogle-container{
+    background-color: #f4f4f4;
+  }

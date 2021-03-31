@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CCHUB Graduate Programme 2021 (Calculator Project)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+
+        <!-- <img src="./copy_172700824.png" /> -->
+   <div class="img-bg">
+
+    <div class="calc-container">
+        
+        <div class="main-wrapper">
+            <div class="header">
+                 <p >Calculator </p>
+                 <div style="margin-top: 10px;"></div>
+                 <div class="toogle-container" onclick="myFunction()">
+                     <div class="toogle-btn" ></div>
+                 </div>
+            </div>
+           
+
+            <div class="user-text">
+                <p id="userText"></p>
+                <p id="finalAnswer"></p>
+            </div>
+
+            <div class="slide-down">
+            <div class="center-div flex-side space-side">
+                <div id="acBtn">AC</div>
+                <div id="clearBtn"><i class="fas fa-backspace"></i></div>
+                <div id="percentBtn"><i class="fa fa-percent" aria-hidden="true"></i></div>
+                <div id="divideBtn"><i class="fas fa-divide"></i></div>
+            </div>
+
+            <div class="center-div flex-side space-side align-side">
+                <div id="sevenBtn">7</div>
+                <div id="eightBtn">8</div>
+                <div id="nineBtn">9</div>
+                <div id="multiplyBtn">X</div>
+            </div>
+
+            <div class="center-div flex-side space-side">
+                <div id="fourBtn">4</div>
+                <div id="fiveBtn">5</div>
+                <div id="sixBtn">6</div>
+                <div style="font-weight: 800; " id="minusBtn">-</div>
+            </div>
+
+            <div class="center-div flex-side space-side">
+                <div id="oneBtn">1</div>
+                <div id="twoBtn">2</div>
+                <div id="threeBtn">3</div>
+                <div style="font-weight: 800;" id="addBtn">+</div>
+            </div>
+
+  
+            
+            <div class="center-div flex-side space-side">
+                <div></div>
+                <div id="zeroBtn">0</div>
+                <div id="decimalBtn">.</div>
+                <div id="equalsBtn" style="margin-left: 35px;"><i class="fas fa-equals"></i></div>
+            </div>
+            </div>
+        </div>
+    </div>
+   </div>
+    </div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
