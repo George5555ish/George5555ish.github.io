@@ -60,13 +60,24 @@ body {
     height: 800px;
     top: 10vh;
    
+   
 }
 
 
   .main-wrapper{
     /* width: 320px;   */
     margin: 0 auto;
- 
+   
+  }
+
+  .main-wrapper-cont{
+    width: 320px;
+    height: 100%;
+     background-color: #f4f4f4;
+  }
+
+  .main-wrapper-cont > * {
+    margin: 0 auto;
   }
 
   .main-wrapper > * {
